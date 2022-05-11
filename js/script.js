@@ -123,7 +123,6 @@ heightBtn.addEventListener("click", function () {
     ];
     /* CALCUALTE MEAN */
     let mean = arrOfHeights.reduce((sum, acc) => sum + acc) / 5;
-    console.log(arrOfHeights);
     /* CALCULATE MEDIAN */
     let median;
     let sorted = arrOfHeights.sort((a, b) => a - b);
@@ -161,11 +160,13 @@ heightBtn.addEventListener("click", function () {
         }
       }
       // convert key back to number
-      return Number(highestValueKey);
+      return Number(highestValue) === 1
+        ? "Modes are not present"
+        : Number(highestValueKey);
     }
 
     let mode = getMode(arrOfHeights);
 
-    displayData.innerHTML = `Mean is ${mean} , Median is ${median} and Mode is ${mode}`;
+    displayData.innerHTML = `Mean: ${mean} , Median: ${median} and Mode: ${mode}`;
   }
 });
