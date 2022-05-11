@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Data Form</title>
+  </head>
+  <body>
+    <div id="signup-display">
+      <header id="signup-header">
+        <h1>User Registration</h1>
+      </header>
+      <main id="sign-up">
+        <form action="#" name="RegForm" autocomplete="on" id="container">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            class="inputstyle"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            class="inputstyle"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="inputstyle"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="inputstyle"
+            pattern=".{6,}"
+            placeholder="Enter your password (min. 6 characters)"
+            required
+          />
+          <input type="submit" value="Submit" id="submitBtn" />
+        </form>
+        <p class="login-text">Already registered?</p>
+        <button id="to-login">Login</button>
+        <footer>
+          <a href="https://github.com/iamdarshangowda"
+            >created by <b>darshan gowda</b></a
+          >
+        </footer>
+      </main>
+    </div>
+
+    <!--Login page-->
+    <section id="login-display">
+      <header>
+        <h1>User Login</h1>
+        <h3 id="login-text"></h3>
+      </header>
+      <form action="#" name="LoginForm" autocomplete="on" id="lcontainer">
+        <input
+          type="email"
+          id="email"
+          name="lemail"
+          class="inputstyle"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Enter your email"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          name="lpassword"
+          class="inputstyle"
+          pattern=".{6,}"
+          placeholder="Enter your password (minimum 6 Charecters)"
+          required
+        />
+        <input type="submit" value="Login" id="loginSubmitBtn" />
+      </form>
+      <h3 id="incorrect-pass"></h3>
+      <p class="register-text">Not registered?</p>
+      <button id="to-register">Sign Up</button>
+    </section>
+
+    <!--Form to find Mean Median & Mode -->
+    <div id="form-display">
+      <header>
+        <h1>Please Enter details below</h1>
+        <h3>
+          Here we are going to calculate mean, median and mode for the below
+          heights of your family members.
+        </h3>
+      </header>
+      <form action="#" name="FinalForm" autocomplete="on" id="fcontainer">
+        <input
+          type="number"
+          id="yourheight"
+          name="yourheight"
+          class="inputstyle"
+          min="0"
+          step="0.1"
+          placeholder="Enter your height"
+          required
+        />
+        <input
+          type="number"
+          id="fatherheight"
+          name="fatherheight"
+          class="inputstyle"
+          min="0"
+          step="0.1"
+          placeholder="Enter your fathers height"
+          required
+        />
+        <input
+          type="number"
+          id="motherheight"
+          name="motherheight"
+          class="inputstyle"
+          min="0"
+          step="0.1"
+          placeholder="Enter your mothers height"
+          required
+        />
+        <input
+          type="number"
+          id="gfatherheight"
+          name="gfatherheight"
+          class="inputstyle"
+          min="0"
+          step="0.1"
+          placeholder="Enter your Grand fathers height"
+          required
+        />
+        <input
+          type="number"
+          id="gmotherheight"
+          name="gmotherheight"
+          class="inputstyle"
+          min="0"
+          step="0.1"
+          placeholder="Enter your Grand mothers height"
+          required
+        />
+        <input type="submit" value="Submit" id="FormSubmitBtn" />
+      </form>
+      <h4 id="data"></h4>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
