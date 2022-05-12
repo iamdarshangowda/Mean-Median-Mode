@@ -72,6 +72,7 @@ lform.addEventListener("submit", handleLoginForm);
 let actualLogin = document.getElementById("loginSubmitBtn");
 
 let incorrectPass = document.getElementById("incorrect-pass");
+let userFormName = document.getElementById("form-user-name");
 
 actualLogin.addEventListener("click", function () {
   if (
@@ -82,6 +83,9 @@ actualLogin.addEventListener("click", function () {
     signupDisplay.style.display = "none";
     loginDisplay.style.display = "none";
     formDisplay.style.display = "block";
+    userFormName.innerHTML = `${localStorage.getItem(
+      "userFirstName"
+    )}, Please fill the form`;
   } else {
     incorrectPass.innerHTML = "Your email or password is incorrect";
   }
