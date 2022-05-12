@@ -57,7 +57,7 @@ header > h1 {
   background-color: orange;
   font-family: inherit;
   font-weight: 700;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   border-radius: 6px;
   text-align: center;
