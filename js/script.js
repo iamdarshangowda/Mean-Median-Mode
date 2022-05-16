@@ -154,7 +154,7 @@ heightBtn.addEventListener("click", function () {
 
       // return object key with highest value.
       let highestValue = 0;
-      let highestValueKey = -Infinity;
+      let highestValueKey;
 
       for (let key in obj) {
         const value = obj[key];
